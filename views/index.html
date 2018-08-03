@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>File Metadata</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+
+      <div class="container">
+        <h2>API Project: File Metadata Microservice</h2>
+        <h3>User Stories:</h3>
+        <ol>
+          <li>To be able to submit a FormData object that includes a file upload.</li>
+          <li>When a file is uploaded, A JSON response with the file size in bytes will be returned.</li>
+        </ol>
+
+        <h3>Usage:</h3>
+        <p>
+          Please Upload a File ...
+        </p>
+        
+        <div class="view">
+          <h4 id="output"></h4>
+          <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+            <input id="inputfield" type="file" name="upfile">
+            <input id="button" type="submit" value="Upload">
+          </form>
+        </div>
+        
+        <h3>Example output:</h3>
+        <p>
+          { "name" : "test.js", "type" : "application/x-javascript", "size" : 956 }
+        </p>
+        
+      </div>
+      <div class="footer">
+        <p>
+          
+        </p>
+      </div>
+   </body>
+
+
+</html>
